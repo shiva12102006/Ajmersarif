@@ -941,7 +941,7 @@ SAME AS REFERENCE DESIGN
   display: flex;
   align-items: center;
   justify-content: center;
-  margin-top: 60px;
+  margin-top: 45px;
 
 }
 
@@ -1406,11 +1406,13 @@ SAME AS REFERENCE DESIGN
 /* Main Section with Background Banner Image Setup */
 .as-faq-section {
   /* यहाँ अपनी फ़ाइल के अनुसार इमेज का नाम बदलें (उदा. faq-banner.jpg) */
-  background: url("images/lalten.png") no-repeat center center;
-  background-size: cover;
+   background: url("images/ChatGPT Image Jun 3, 2026, 01_27_16 PM.png")
+    no-repeat center top;
+
+  background-size: cover; /* Puri image dikhegi */
   padding: 60px 15px;
   width: 100%;
-  color: #ffffff;
+  color: #fff;
 }
 
 .as-faq-container {
@@ -1778,10 +1780,12 @@ SAME AS REFERENCE DESIGN
 /* Main Section with Background Image Setup */
 .as-wwd-section {
   /* यहाँ अपनी डार्क ग्रीन वर्ल्ड मैप वाली बैकग्राउंड इमेज का नाम डालें */
-  background: url("/images/sentersec.png") no-repeat center center;
-  background-size: cover;
+  background: url("/images/map2.png") no-repeat center center;
+  
   padding: 35px 20px;
   width: 100%;
+  background-position: center -90px;
+background-size: cover;
   min-height: 280px;
   display: flex;
   align-items: center;
@@ -2867,6 +2871,27 @@ SAME AS REFERENCE DESIGN
     height: 100%;
     display: block;
     cursor: pointer;
+}
+
+
+.img222{
+ 
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  object-position: top;
+}
+.ima222 {
+  width: 100%;
+  height: 250px;
+  overflow: hidden;
+}
+
+.img222 img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  object-position: top ; /* Top wala part dikhega */
 }
 
 
