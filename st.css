@@ -1755,12 +1755,15 @@ SAME AS REFERENCE DESIGN
     grid-template-columns: repeat(3, 1fr);
     gap: 20px;
   }
+  
 }
 
 @media (max-width: 768px) {
   .as-proof-grid {
     grid-template-columns: repeat(2, 1fr);
   }
+  
+ 
   .as-proof-main-title {
     font-size: 26px;
     font-weight: 700;
@@ -1780,11 +1783,11 @@ SAME AS REFERENCE DESIGN
 /* Main Section with Background Image Setup */
 .as-wwd-section {
   /* यहाँ अपनी डार्क ग्रीन वर्ल्ड मैप वाली बैकग्राउंड इमेज का नाम डालें */
-  background: url("/images/map2.png") no-repeat center center;
+  background: url("/images/map.png") no-repeat center center;
   
   padding: 35px 20px;
   width: 100%;
-  background-position: center -90px;
+  background-position: center -20px;
 background-size: cover;
   min-height: 280px;
   display: flex;
