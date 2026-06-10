@@ -350,18 +350,22 @@ SMALL MOBILE
 .sub-heading {
   color: #dfb66d;
   font-size: 24px;
-  font-style: italic;
+  /* font-style: italic; */
   font-family: "Arial", serif;
   display: block;
 }
 
 .main-heading {
-  font-size: 48px;
-  font-weight: 700;
+  font-size: 30px;
+  font-weight: 600;
   line-height: 1.1;
   letter-spacing: 1px;
   margin: 5px 0 20px 0;
   font-family: "Arial", Times, serif;
+}
+.main-heading span {
+  color: #fff;
+  font-weight: 700;
 }
 
 .services-highlight {
@@ -578,7 +582,7 @@ SAME AS REFERENCE DESIGN
 
     font-size: 18px;
 
-    font-style: italic;
+   
 
     margin-bottom: 8px;
   }
@@ -586,13 +590,14 @@ SAME AS REFERENCE DESIGN
   /* Main Heading */
 
   .main-heading {
-    font-size: 34px;
+    font-size: 14px;
 
     line-height: 1.02;
 
     color: #ffffff;
 
-    margin-bottom: 16px;
+    margin-bottom: 12px;
+    margin-top: 15px;
 
     font-weight: 700;
 
@@ -2515,6 +2520,8 @@ background-size: cover;
   .hero-section {
     padding: 20px 0 30px;
     min-height: auto;
+    text-align: center;
+  
   }
 
   .hero-content {
@@ -2897,5 +2904,563 @@ background-size: cover;
   object-position: top ; /* Top wala part dikhega */
 }
 
+.scroll-to-hero {
+  position: fixed;
+  bottom: 30px;
+  right: 30px;
+  background-color: #012b1b;
+  color: #dfb66d;
+  border: none;
+  border-radius: 50%;
+  width: 40px;
+  height: 40px;
+  display: flex;
+  text-decoration: none;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+  font-size: 18px;
+  transition: background-color 0.3s ease, transform 0.3s ease;
+}
+.scroll-to-hero:hover {
+  background-color: #03442b;
+  transform: translateY(-2px);
+}
 
 
+.legacy-section {
+  position: relative;
+  padding: 70px 20px;
+  background: #fbf4e6;
+  overflow: hidden;
+  font-family: Arial, sans-serif;
+}
+
+.legacy-bg {
+  position: absolute;
+  inset: 0;
+  background:
+    radial-gradient(circle at top left, rgba(196, 145, 55, 0.22), transparent 35%),
+    radial-gradient(circle at top right, rgba(9, 70, 38, 0.15), transparent 30%);
+  opacity: 0.8;
+}
+
+.legacy-container {
+  position: relative;
+  max-width: 1300px;
+  margin: auto;
+  text-align: center;
+}
+
+.legacy-subtitle {
+  color: #0c4b2b;
+  font-weight: 700;
+  text-transform: uppercase;
+  letter-spacing: 2px;
+}
+
+.legacy-container h2 {
+  font-size: 40px;
+  color: #063b22;
+  margin: 10px 0;
+}
+
+.legacy-desc {
+  font-size: 20px;
+  color: #7b4d16;
+  margin-bottom: 35px;
+}
+
+.legacy-main {
+  display: grid;
+  grid-template-columns: 1.1fr 1fr;
+  border: 1px solid #d5a84c;
+  border-radius: 18px;
+  background: #fffaf0;
+  overflow: hidden;
+  box-shadow: 0 12px 35px rgba(0,0,0,0.12);
+}
+
+.legacy-left {
+  padding: 25px;
+  border-right: 1px solid #d5a84c;
+}
+
+.legacy-tabs {
+  display: flex;
+  margin-bottom: 20px;
+}
+
+.tab-btn {
+  flex: 1;
+  padding: 16px;
+  border: 1px solid #d5a84c;
+  background: #fff4dc;
+  color: #65400d;
+  font-size: 17px;
+  font-weight: 700;
+  cursor: pointer;
+}
+
+.tab-btn.active {
+  background: #073d22;
+  color: #fff;
+}
+
+.tab-content {
+  display: none;
+}
+
+.tab-content.active {
+  display: block;
+}
+
+.legacy-content-card {
+  display: grid;
+  grid-template-columns: 220px 1fr;
+  gap: 30px;
+  align-items: center;
+  text-align: left;
+  padding: 35px;
+  border: 1px solid #e2bd69;
+  background: #fffdf7;
+}
+
+.round-img {
+  width: 210px;
+  height: 210px;
+  border-radius: 50%;
+  overflow: hidden;
+  border: 4px solid #d5a84c;
+}
+
+.round-img img,
+.profile-card img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.legacy-content-card h3 {
+  color: #073d22;
+  font-size: 34px;
+  margin-bottom: 15px;
+}
+
+.legacy-content-card p {
+  font-family: Arial, sans-serif;
+  font-size: 17px;
+  line-height: 1.7;
+  color: #222;
+}
+
+.legacy-right {
+  padding: 30px;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 24px;
+  align-content: center;
+}
+
+.profile-card {
+  background: #073d22;
+  border: 3px solid #d5a84c;
+  border-radius: 18px;
+  overflow: hidden;
+  box-shadow: 0 10px 25px rgba(0,0,0,0.18);
+}
+
+.profile-card img {
+  height: 280px;
+  display: block;
+}
+
+.profile-card h4 {
+  color: #f1c66a;
+  font-size: 16px;
+  padding: 18px;
+  margin: 0;
+}
+
+.caretaker-label {
+  grid-column: span 2;
+  padding: 15px;
+  border: 1px solid #d5a84c;
+  border-radius: 50px;
+  color: #073d22;
+  font-weight: 800;
+  font-size: 20px;
+  background: #fff6df;
+}
+
+.legacy-note {
+  margin: 25px 0;
+  padding: 25px 35px;
+  background: #fffaf0;
+  border: 1px solid #d5a84c;
+  border-radius: 16px;
+  font-size: 20px;
+  line-height: 1.6;
+  color: #111;
+}
+
+.legacy-bottom {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr) 1.2fr 1.2fr;
+  gap: 16px;
+  align-items: center;
+}
+
+.stat {
+  background: #fffaf0;
+  border: 1px solid #d5a84c;
+  padding: 18px;
+  border-radius: 12px;
+}
+
+.stat strong {
+  display: block;
+  color: #073d22;
+  text-transform: uppercase;
+}
+
+.stat span {
+  color: #6b4717;
+}
+
+.btn {
+  padding: 18px 20px;
+  border-radius: 10px;
+  text-decoration: none;
+  font-weight: 800;
+  color: #fff;
+  font-family: Arial, sans-serif;
+}
+
+.btn.dark {
+  background: #073d22;
+}
+
+.btn.green {
+  background: #10a52d;
+}
+
+@media (max-width: 900px) {
+  .legacy-container h2 {
+    font-size: 34px;
+  }
+
+  .legacy-main {
+    grid-template-columns: 1fr;
+  }
+
+  .legacy-left {
+    border-right: none;
+    border-bottom: 1px solid #d5a84c;
+  }
+
+  .legacy-content-card {
+    grid-template-columns: 1fr;
+    text-align: center;
+  }
+
+  .round-img {
+    margin: auto;
+  }
+
+  .legacy-bottom {
+    grid-template-columns: 1fr;
+  }
+}
+
+@media (max-width: 600px) {
+  .legacy-tabs {
+    flex-direction: column;
+  }
+
+  .legacy-right {
+    grid-template-columns: 1fr;
+  }
+
+  .caretaker-label {
+    grid-column: span 1;
+  }
+
+  .legacy-container h2 {
+    font-size: 28px;
+  }
+}
+
+
+/* servisesectio */
+
+#asds-dargah-services-2026 {
+  padding: 80px 20px;
+  background:
+    radial-gradient(circle at top left, rgba(212, 163, 74, 0.28), transparent 35%),
+    radial-gradient(circle at top right, rgba(8, 67, 38, 0.16), transparent 35%),
+    #fbf4e6;
+  font-family: Arial, sans-serif;
+  color: #10251a;
+  overflow: hidden;
+}
+
+#asds-dargah-services-2026 .asds-wrap-2026 {
+  max-width: 1300px;
+  margin: 0 auto;
+}
+
+#asds-dargah-services-2026 .asds-head-2026 {
+  text-align: center;
+  margin-bottom: 45px;
+}
+
+#asds-dargah-services-2026 .asds-label-2026 {
+  display: inline-block;
+  padding: 8px 24px;
+  background: #073d22;
+  color: #f7d27c;
+  border-radius: 50px;
+  text-transform: uppercase;
+  letter-spacing: 2px;
+  font-size: 13px;
+  font-weight: 700;
+}
+
+#asds-dargah-services-2026 .asds-title-2026 {
+ font-family: Arial, sans-serif;
+  font-size: 48px;
+  color: #073d22;
+  margin: 18px 0 8px;
+}
+
+#asds-dargah-services-2026 .asds-subtitle-2026 {
+  color: #8a5a18;
+  font-size: 22px;
+  font-weight: 600;
+  margin-bottom: 16px;
+}
+
+#asds-dargah-services-2026 .asds-intro-2026 {
+  max-width: 850px;
+  margin: auto;
+  font-size: 17px;
+  line-height: 1.8;
+  color: #3c2d18;
+}
+
+#asds-dargah-services-2026 .asds-grid-2026 {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 22px;
+}
+
+#asds-dargah-services-2026 .asds-card-2026 {
+  position: relative;
+  padding: 34px 24px;
+  min-height: 335px;
+  background: rgba(255, 252, 244, 0.97);
+  border-radius: 22px;
+  text-align: left;
+  overflow: hidden;
+  box-shadow: 0 12px 35px rgba(0,0,0,0.1);
+  z-index: 1;
+  transition: 0.35s ease;
+}
+
+#asds-dargah-services-2026 .asds-card-2026:hover {
+  transform: translateY(-8px);
+}
+
+#asds-dargah-services-2026 .asds-card-2026::before {
+  content: "";
+  position: absolute;
+  inset: 0;
+  padding: 2px;
+  border-radius: 22px;
+  background: linear-gradient(
+    120deg,
+    #d4a34a,
+    #073d22,
+    #f8d982,
+    #073d22,
+    #d4a34a
+  );
+  background-size: 300% 300%;
+  animation: asdsBorderMove2026 4s linear infinite;
+  -webkit-mask:
+    linear-gradient(#fff 0 0) content-box,
+    linear-gradient(#fff 0 0);
+  -webkit-mask-composite: xor;
+          mask-composite: exclude;
+  z-index: -1;
+}
+
+@keyframes asdsBorderMove2026 {
+  0% {
+    background-position: 0% 50%;
+  }
+  100% {
+    background-position: 300% 50%;
+  }
+}
+
+#asds-dargah-services-2026 .asds-card-2026::after {
+  content: "";
+  position: absolute;
+  width: 130px;
+  height: 130px;
+  right: -45px;
+  bottom: -45px;
+  background: rgba(212, 163, 74, 0.14);
+  border-radius: 50%;
+  z-index: -1;
+}
+
+#asds-dargah-services-2026 .asds-num-2026 {
+  position: absolute;
+  top: 18px;
+  right: 20px;
+  font-size: 38px;
+  font-weight: 900;
+  color: rgba(7, 61, 34, 0.11);
+}
+
+#asds-dargah-services-2026 .asds-icon-2026 {
+  width: 72px;
+  height: 72px;
+  background: #073d22;
+  color: #f7d27c;
+  border: 2px solid #d4a34a;
+  border-radius: 50%;
+  display: grid;
+  place-items: center;
+  font-size: 32px;
+  margin-bottom: 22px;
+  box-shadow: 0 8px 18px rgba(7, 61, 34, 0.25);
+}
+
+#asds-dargah-services-2026 .asds-card-2026 h3 {
+  font-family: Arial, sans-serif;
+  color: #073d22;
+  font-size: 23px;
+  line-height: 1.25;
+  margin: 0 0 14px;
+}
+
+#asds-dargah-services-2026 .asds-card-2026 p,
+#asds-dargah-services-2026 .asds-card-2026 li {
+  font-size: 15.5px;
+  line-height: 1.7;
+  color: #2e2e2e;
+}
+
+#asds-dargah-services-2026 .asds-card-2026 ul {
+  padding-left: 18px;
+  margin-top: 10px;
+}
+
+#asds-dargah-services-2026 .asds-wide-2026 {
+  grid-column: span 2;
+  min-height: 280px;
+}
+
+#asds-dargah-services-2026 .asds-footer-2026 {
+  margin-top: 35px;
+  padding: 36px;
+  text-align: center;
+  border-radius: 26px;
+  background: linear-gradient(135deg, #073d22, #0c5c36);
+  color: #fff;
+  border: 2px solid #d4a34a;
+  box-shadow: 0 16px 38px rgba(0,0,0,0.16);
+}
+
+#asds-dargah-services-2026 .asds-footer-2026 h3 {
+  font-family: Arial, sans-serif;
+  color: #f7d27c;
+  font-size: 34px;
+  margin: 0 0 12px;
+}
+
+#asds-dargah-services-2026 .asds-footer-2026 p {
+  max-width: 850px;
+  margin: 0 auto 26px;
+  line-height: 1.8;
+}
+
+#asds-dargah-services-2026 .asds-buttons-2026 {
+  display: flex;
+  justify-content: center;
+  gap: 16px;
+  flex-wrap: wrap;
+}
+
+#asds-dargah-services-2026 .asds-btn-2026 {
+  display: inline-block;
+  padding: 15px 28px;
+  border-radius: 12px;
+  text-decoration: none;
+  font-weight: 800;
+  transition: 0.3s ease;
+}
+
+#asds-dargah-services-2026 .asds-btn-main-2026 {
+  background: #d4a34a;
+  color: #073d22;
+}
+
+#asds-dargah-services-2026 .asds-btn-whatsapp-2026 {
+  background: #1fae4b;
+  color: #fff;
+}
+
+#asds-dargah-services-2026 .asds-btn-2026:hover {
+  transform: translateY(-4px);
+  box-shadow: 0 8px 20px rgba(0,0,0,0.25);
+}
+
+@media (max-width: 1024px) {
+  #asds-dargah-services-2026 .asds-grid-2026 {
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  #asds-dargah-services-2026 .asds-wide-2026 {
+    grid-column: span 1;
+  }
+}
+
+@media (max-width: 600px) {
+  #asds-dargah-services-2026 {
+    padding: 55px 15px;
+  }
+
+  #asds-dargah-services-2026 .asds-title-2026 {
+    font-size: 32px;
+  }
+
+  #asds-dargah-services-2026 .asds-subtitle-2026 {
+    font-size: 18px;
+  }
+
+  #asds-dargah-services-2026 .asds-grid-2026 {
+    grid-template-columns: 1fr;
+  }
+
+  #asds-dargah-services-2026 .asds-card-2026 {
+    min-height: auto;
+  }
+
+  #asds-dargah-services-2026 .asds-footer-2026 {
+    padding: 28px 20px;
+  }
+
+  #asds-dargah-services-2026 .asds-footer-2026 h3 {
+    font-size: 26px;
+  }
+
+  #asds-dargah-services-2026 .asds-btn-2026 {
+    width: 100%;
+    text-align: center;
+  }
+}
