@@ -2910,14 +2910,14 @@ background-size: cover;
 
 .scroll-to-hero {
   position: fixed;
-  bottom: 30px;
-  right: 30px;
+  bottom: 100px;
+  right: 20px;
   background-color: #012b1b;
   color: #dfb66d;
   border: none;
   border-radius: 50%;
-  width: 40px;
-  height: 40px;
+  width: 50px;
+  height: 50px;
   display: flex;
   text-decoration: none;
   align-items: center;
@@ -3407,4 +3407,31 @@ background-size: cover;
     width: 100%;
     text-align: center;
   }
+}
+
+.flotingwhatsapp{
+    position: fixed;
+    right: 20px;
+    bottom: 30px;
+    width: 50px;
+    height: 50px;
+    background: #25D366;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-decoration: none;
+    z-index: 9999;
+    box-shadow: 0 4px 10px rgba(0,0,0,.2);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.flotingwhatsapp:hover {
+    transform: scale(1.1);
+    box-shadow: 0 6px 15px rgba(0,0,0,.3);
+}
+
+.flotingwhatsapp i{
+    color: #fff;
+    font-size: 30px;
 }
