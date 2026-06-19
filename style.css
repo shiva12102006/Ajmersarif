@@ -3464,7 +3464,8 @@ background-size: cover;
    
     padding: 10px;
     background: rgba(32, 92, 58, 0.6);
-    color: #f7d27c;
+    /* color: #f7d27c; */
+    color: #fff;
     font-size: 16px;
     font-weight: 600;
     text-align: center;
